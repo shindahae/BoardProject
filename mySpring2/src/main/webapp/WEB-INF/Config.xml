@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration><!-- DB설정(Connection) -->
+
+	<typeAliases>
+	<typeAlias type="sist.com.vo.MemberVO" alias="member" />
+	<typeAlias type="sist.com.vo.PostVO" alias="post" />
+	<typeAlias type="sist.com.vo.PostDetailDTO" alias="postdto" />
+	<typeAlias type="sist.com.vo.MyDetailDTO" alias="mydetaildto" />
+	<typeAlias type="sist.com.vo.ReplyVO" alias="reply" />
+	<typeAlias type="sist.com.vo.ReplyDTO" alias="replydto" />
+	</typeAliases>
+
+	<mappers>
+	<mapper resource="sist/com/dao/board.xml" />
+	</mappers>
+</configuration>
